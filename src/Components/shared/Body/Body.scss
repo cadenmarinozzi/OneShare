@@ -1,0 +1,17 @@
+@use 'vars.scss' as *;
+
+.body {
+    position: absolute;
+
+    width: calc(100% - $spacing-size * 2);
+    height: calc(100% - (30px + $spacing-size * 2) - $spacing-size * 2);
+
+    top: calc(30px + $spacing-size * 2 + $spacing-size);
+
+    margin-inline: $spacing-size;
+    
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}

@@ -1,0 +1,13 @@
+@use './colors.scss' as *;
+
+$border: 2px solid;
+$border-seperator: 2px solid $medium;
+
+$border-radius-large: 25px;
+$border-radius-medium: 15px;
+$border-radius-regular: 8px;
+$border-radius-small: 4px;
+
+$transition-regular: 0.2s;
+
+$spacing-size: 20px;

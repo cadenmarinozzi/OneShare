@@ -1,0 +1,102 @@
+@use 'colors.scss' as *;
+@use 'vars.scss' as *;
+
+.button {
+    width: 260px;
+    height: 40px;
+
+    border: $border;
+
+    border-color: $regular;
+    border-radius: $border-radius-regular;
+
+    background: $medium;
+
+    color: $regular;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+    padding-block: 5px;
+    padding-inline: 10px;
+    
+    transition: $transition-regular;
+
+    cursor: pointer;
+}
+
+.button-theme {    
+    color: $theme;
+}
+
+.button-error {
+    border-color: $error;
+
+    color: $error;
+}
+
+.button-success {
+    border-color: $success;
+
+    color: $success;
+}
+
+.button-info {
+    border-color: $info;
+
+    color: $info;
+}
+
+.button-disabled {
+    border-color: $regular;
+    color: $regular;
+
+    cursor: not-allowed;
+}
+
+.button-primary:hover {
+    color: white;
+}
+
+.button-theme:hover {
+    border-color: $theme;
+
+    background: $theme-opaque;
+}
+
+.button-info:hover {
+    border-color: $info;
+
+    background: $info-opaque;
+}
+
+.button-success:hover {
+    border-color: $success;
+
+    background: $success-opaque;
+}
+
+.button-error:hover {
+    border-color: $error;
+
+    background: $error-opaque;
+}
+
+.button:active {
+    color: $theme;
+
+    background: $theme-opaque;
+
+    border-color: $theme;
+}
+
+.button-circle {
+    border-radius: 50%;
+
+    width: 50px;
+    height: 50px;
+}

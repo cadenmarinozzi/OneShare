@@ -1,0 +1,92 @@
+@use 'colors.scss' as *;
+@use 'vars.scss' as *;
+
+.input-container {
+    width: 260px;
+    height: 40px;
+
+    position: relative;
+
+    transition: $transition-regular;
+
+    border: $border;
+        
+    border-color: $regular;
+    border-radius: $border-radius-regular;
+
+    background: $medium;
+    
+    .input {
+        width: calc(100% - 5px);
+        height: calc(100% - 10px);
+
+        padding-block: 5px;
+        padding-inline: 10px;
+
+        outline: 0;
+
+        transition: $transition-regular;
+
+        background: transparent;
+
+        border: 0;
+    }
+
+    .input-money {
+        color: $success;
+    }
+
+    .input-disabled {
+        cursor: not-allowed;
+        caret-color: transparent;
+    }
+
+    .input-disabled+.input-label {
+        color: $regular;
+    }
+
+    .input-label {
+        position: absolute;
+
+        left: 10px;
+        top: -2px;
+        
+        transform: translateY(-50%);
+
+        text-align: left;
+
+        background: $medium;
+
+        padding-inline: 5px;
+
+        transition: $transition-regular;
+    }
+
+    .input-error+.input-label {
+        color: $error;
+    }
+
+    .input-success+.input-label {
+        color: $success;
+    }
+
+    .input-info+.input-label {
+        color: $info;
+    }
+
+    .input-theme:focus+.input-label {
+        color: $theme;
+    }
+}
+
+.input-error {
+    border-color: $error;
+}
+
+.input-success {
+    border-color: $success;
+}
+
+.input-info {
+    border-color: $info;
+}

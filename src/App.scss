@@ -1,0 +1,37 @@
+@use 'colors.scss' as *;
+
+.center-xy {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.center-x {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.center-y {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.bottom {
+    position: absolute;
+
+    bottom: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $theme;
+    color: $theme;
+}
